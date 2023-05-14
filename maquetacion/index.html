@@ -1,56 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
+
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=3.0, initial-scale=1.0" />
+    
+    <title>Fundacion Tecnologia con Proposito</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
-        <div id="header-left">
-            <img src="logo.svg">
-        </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
-        </div>
-    </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
-        </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
-        </div>
-    </div>
+    <header class="header">
+        <img class="header__img" src="./logo.svg" alt="">
+        
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__list--items">
+                        <a href="" class="nav__list--items-li">Nosotros</a>
+                    </li>
+                    <li class="nav__list--items">
+                        <a href="" class="nav__list--items-li">Programas</a>
+                    </li>
+                    <li class="nav__list--items">
+                        <a href="" class="nav__list--items-li">Capacitaciones</a>
+                    </li>
+                    <li class="nav__list--items">                    
+                        <a href="" class="nav__list--items-li">Alianzas</a>
+                    </li>
+                    <li class="nav__list--items">                    
+                        <a href="" class="nav__list--items-li">Contacto</a>
+                    </li>
+                    <li class="nav__list--items">                    
+                        <a href="" class="sumateText">Sumate +</a>
+                    </li>
+                    <li class="nav__list--items" >
+                        <a href="" class="nav__list--items--li"><i class="fa-brands fa-instagram icono"></i></a>
+                    </li>
+                    <li class="nav__list--items">
+                        <a href="" class="nav__list--items--li"><i class="fa-brands fa-linkedin-in icono"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main class="main">
+        <section class="somos">
+            <div class="somos__arriba">
+                <p class="somos__texto">
+                    Somos una Fundación dedicada a mejorar la calidad de vida 
+                    de las personas y su entorno, a través de la tecnología.
+    
+                </p>
+                <div class="somos__btn">
+                    <a href="" class="somos__btn--contactanos">Contactanos
+                        <i class="fa-solid fa-arrow-right somos__icono"></i> </a>
+                    <a href="" class="somos__btn--sumate">Sumate
+                        <i class="fa-sharp fa-solid fa-plus somos__icono"></i></a>
+                </div>
+            </div>
+
+            <div class="somos__abajo">
+                <div class="somos_texto">
+                    <p>.Imapco</p>
+                    <p>Buscamos construir alianzas y fortalecer vínculos para generar una 
+                        transformación real en la comunidad. Trabajamos para acercar 
+                        la tecnología innovadora y disruptiva del sector privado hacia el 
+                        sector social.</p>
+                </div>
+                <div class="somos__numeros">
+                    <div class="somos__numeros-1">
+                        <p class="somos__numero">58</p>
+                        <p class="somos__numero--texto">Localidades</p>
+                    </div>
+                    <div class="somos__numeros-1">
+                        <p class="somos__numero">
+                            <i class="fa-sharp fa-solid fa-plus somos__icono"></i>
+                             50</p>
+                        <p class="somos__numero--texto">Mentores</p>
+                    </div>
+                    <div class="somos__numeros-1">
+                        <p class="somos__numero">301</p>
+                        <p class="somos__numero--texto">Participantes</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+    </footer>
 </body>
 </html>

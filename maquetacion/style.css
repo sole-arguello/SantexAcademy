@@ -1,0 +1,111 @@
+*{
+    /* outline: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-bottom: 1px solid #8C939C;
+}
+.header__img{
+    max-width: 100%;
+    height: auto;
+}
+.header__contenedor--nav{
+    
+ }
+.nav {
+    font-size: 1rem;
+ }
+.nav__menu{
+    widows: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__list--items{
+    padding: 0 1rem;
+    list-style: none;
+}
+.nav__list--items-li {
+    text-decoration: none;
+    color: black;                  
+}
+.icono{
+    color: black;
+}
+.nav__list--items-li:hover, 
+.icono:hover{
+    color: rgb(107, 83, 240);
+}
+
+.nav__list--items {
+    list-style: none;    
+    line-height: 14px;
+    margin: 0 0.5rem;   
+}
+.sumateText{
+    text-decoration: none;
+    color: rgb(32, 27, 36);
+    border: 2px solid rgb(32, 27, 36);
+    border-radius: 10rem;
+    padding: 9px 20px;
+}
+.sumateText:hover{
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+/* main */
+.somos{
+    
+}
+.somos__arriba{
+    text-align: center;
+    width: 50%;
+    margin: 5rem auto;
+    
+}
+.somos__texto{
+    margin: auto;
+    width: 78%;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.somos__btn{
+    margin: 3rem 0;
+}
+.somos__btn--contactanos, .somos__btn--sumate{
+    text-decoration: none;
+    border-radius: 10rem;
+    padding: 9px 20px;
+    margin: 0 15px;
+    font-size: .8rem;
+}
+.somos__btn--contactanos{
+    color: black;
+    border: 2px solid rgb(32, 27, 36);
+}
+.somos__btn--contactanos:hover{
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+.somos__btn--sumate{
+    color: rgb(107, 83, 240);
+    border: 2px solid rgb(107, 83, 240);
+}
+.somos__btn--sumate:hover{
+    color: white;
+    background-color: rgb(107, 83, 240);
+}
+.somos__icono{
+    margin-left: 2px;
+}
+.somos__abajo{
+    margin: 0;
+    background-color: rgb(32, 27, 36);
+}
+
