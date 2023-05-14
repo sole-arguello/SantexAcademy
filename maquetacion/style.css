@@ -2,9 +2,12 @@
     /* outline: 1px solid red; */
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .header{
+    padding: 1.2rem 0;
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -14,9 +17,6 @@
     max-width: 100%;
     height: auto;
 }
-.header__contenedor--nav{
-    
- }
 .nav {
     font-size: 1rem;
  }
@@ -59,9 +59,6 @@
     background-color: rgb(32, 27, 36);
 }
 /* main */
-.somos{
-    
-}
 .somos__arriba{
     text-align: center;
     width: 50%;
@@ -105,7 +102,50 @@
     margin-left: 2px;
 }
 .somos__abajo{
-    margin: 0;
+    color: white;
     background-color: rgb(32, 27, 36);
+}
+.contenedor{
+    width: 55%;
+    text-align: center;
+    margin: 5rem auto;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.somos_texto{
+    width: 60%;
+    text-align: left;
+    margin-right: 5rem;
+}
+.somos__texto--impacto{
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: .8rem 0;
+}
+.somos__texto--desc{
+    font-size: .9rem;
+
+}
+
+.somos__numeros{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+}
+.somos__numero{
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-bottom: .2rem;
+}
+.icono__num{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(107, 83, 240);
+}
+.somos__numero--texto{
+    color: rgb(140, 147, 156);
 }
 
