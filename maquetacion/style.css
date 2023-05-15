@@ -4,10 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+}
+body{
+    min-height: 100vh;
 }
 
 .header{
-    padding: 1.2rem 0;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: white;
+    padding: 1.2rem 0 1.2rem 2.5rem;
    display: flex;
    align-items: center;
    justify-content: space-around;
@@ -16,9 +24,10 @@
 .header__img{
     max-width: 100%;
     height: auto;
+    margin-right: 10rem;
 }
 .nav {
-    font-size: 1rem;
+    font-size: .88rem;
  }
 .nav__menu{
     widows: 100%;
@@ -27,9 +36,10 @@
     justify-content: space-between;
 }
 .nav__list--items{
-    padding: 0 1rem;
+    padding-left: 2.3rem;
     list-style: none;
 }
+
 .nav__list--items-li {
     text-decoration: none;
     color: black;                  
@@ -41,41 +51,50 @@
 .icono:hover{
     color: rgb(107, 83, 240);
 }
-
-.nav__list--items {
-    list-style: none;    
-    line-height: 14px;
-    margin: 0 0.5rem;   
-}
 .sumateText{
     text-decoration: none;
     color: rgb(32, 27, 36);
     border: 2px solid rgb(32, 27, 36);
     border-radius: 10rem;
     padding: 9px 20px;
+    
 }
 .sumateText:hover{
     color: white;
     background-color: rgb(32, 27, 36);
 }
+/* banner*/
+
+.banner > .img__banner{
+    
+    background: url("./assets/twp-home2.jpg") 
+    no-repeat center center /cover;
+    background-attachment: fixed;
+    /* height: calc(-80px + 100vh); */
+    height: 55rem;
+    width: 100%;
+}
+
+
 /* main */
 .somos__arriba{
     text-align: center;
     width: 50%;
     margin: 5rem auto;
-    
+    padding-top: 5rem;
 }
 .somos__texto{
     margin: auto;
     width: 78%;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 600;
     line-height: 1.2;
 }
 .somos__btn{
     margin: 3rem 0;
 }
-.somos__btn--contactanos, .somos__btn--sumate{
+.somos__btn--contactanos, 
+.somos__btn--sumate{
     text-decoration: none;
     border-radius: 10rem;
     padding: 9px 20px;
@@ -104,6 +123,9 @@
 .somos__abajo{
     color: white;
     background-color: rgb(32, 27, 36);
+    /**/
+    padding-top: 4rem;
+    padding-bottom: 0;
 }
 .contenedor{
     width: 55%;
@@ -133,7 +155,7 @@
     width: 65%;
     display: flex;
     justify-content: space-between;
-    padding-bottom: .5rem;
+    
 }
 .somos__numero{
     font-size: 3.5rem;
@@ -148,4 +170,129 @@
 .somos__numero--texto{
     color: rgb(140, 147, 156);
 }
+/* programas xacademy y capacitaciones*/
+.programas__capacitaciones {
+
+}
+.capa__estafas--titulo {
+font-size: 1.4rem;
+margin-bottom: 1.5rem;
+}
+.programas__xacademy,
+.capa__estafas{
+    display: flex;
+    align-items: center;
+    margin: 5rem 1rem;
+}
+
+.programas__xacademy--card,
+.programas__xacademy--contenido, 
+.capa__estafas--card,
+.capa__estafas--contenido {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+.programas__xacademy--card-titulo,
+.capa__estafas--card-titulo{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.programas__xacademy--card-img {
+    border-radius: 3rem 3rem 3rem 0;
+    margin-right: 8rem;
+    width: 100%;
+}
+.capa__estafas--card-img {
+    border-radius: 3rem 3rem 3rem 0;
+    margin-right: 5rem;
+    width: 105%;
+}
+
+.programas__xacademy--contenido,
+.capa__estafas--contenido {
+    width: 70%;
+}
+.programas__xacademy--contenido-img{
+    width: 30%;
+}
+.programas__xacademy--contenido-descrp {
+    font-size: .9rem;
+    width: 70%;
+    line-height: 1.2rem;
+
+}
+.capa__estafas--contenido-descrp {
+    font-size: .9rem;
+    width: 75%;
+    line-height: 1.2rem;
+}
+.programas__xacademy--contenido-btn,
+.programas__robotica--btn,
+.capa__estafas--contenido-btn,
+.capa__seguridad--btn {
+    width: 18%;
+    font-size: .8rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(32, 27, 36);
+    border-radius: 10rem;
+    padding: 9px 20px;
+    
+}
+.programas__xacademy--contenido-btn:hover, 
+.programas__robotica--btn:hover,
+.capa__estafas--contenido-btn:hover,
+.capa__seguridad--btn:hover {
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+
+/* programas robotica y capacitaciones*/
+.programas__robotica,
+.capa__seguridad {
+    display: flex;
+    margin: 0 9rem;
+    align-items: center;
+}
+
+.programas__robotica--contenedor,
+.capa__seguridad--contenedor {
+    width: 75%;
+    margin-left: 3rem;
+}
+.programas__robotica--titulo,
+.capa__seguridad--titulo{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.programas__robotica--descrip,
+.capa__seguridad--descrip {
+    font-size: .9rem;
+    width: 80%;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.programas__robotica--card,
+.capa__seguridad--card {
+    margin-right: 1rem;
+}
+.programas__robotica--img {
+    width: 100%;
+    margin-left: 1rem;
+    border-radius: 3rem 3rem 0 3rem;
+}
+.capa__seguridad--img {
+    width: 105%;
+    margin-left: .5rem;
+    border-radius: 3rem 3rem 0 3rem;
+}
+
+/*equipo*/
+
+
+
 
