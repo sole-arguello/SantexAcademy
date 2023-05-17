@@ -24,9 +24,20 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__img" src="../maquetacion/assets/logo.svg" alt="" />
+      
+      <img id="imgDestock" class="header__img" src="../maquetacion/assets/logo.svg" alt="" />
 
       <nav class="nav">
+        
+        <input type="checkbox" class="toggle__check" id="check" >
+
+        
+          <label class="checkBtn" for="check"> 
+          
+            <img src="./assets/Sin título.png" alt="" class="menu__icon">
+          </label>
+        
+
         <ul class="nav__menu">
           <li class="nav__list--items">
             <a href="" class="nav__list--items-li">Nosotros</a>
@@ -44,17 +55,25 @@
             <a href="" class="nav__list--items-li">Contacto</a>
           </li>
           <li class="nav__list--items">
-            <a href="" class="sumateText">Sumate +</a>
+            <a href="" class="nav__list--items-li sumateText">Sumate +</a>
           </li>
-          <li class="nav__list--items">
-            <a href="" class="nav__list--items--li"
+          <!--  -->
+          <li class="nav__list--items" id="icono1">
+            <a href="" class="nav__list--items-li"
               ><i class="fa-brands fa-instagram icono"></i
             ></a>
           </li>
-          <li class="nav__list--items">
-            <a href="" class="nav__list--items--li"
+          <li class="nav__list--items" id="toggle1">
+            <a href="" class="nav__list--items-li">Instagram</a>
+          </li>
+          <li class="nav__list--items" id="icono2">
+            <a href="" class="nav__list--items-li"
               ><i class="fa-brands fa-linkedin-in icono"></i
             ></a>
+          </li>
+          <li class="nav__list--items" id="toggle2">
+            <a href="" class="nav__list--items-li"
+              >Linkedin</a>
           </li>
         </ul>
       </nav>
@@ -111,7 +130,7 @@
         
       </section>
 
-      <section class="banner">
+      <section class="banner " id="banner">
         <div class="img__banner"></div>
       </section>
 
@@ -161,7 +180,8 @@
             </a>
           </div>
           <div class="programas__robotica--card">
-            <img src="./assets/robotica-educativa-07-800x533.jpg" alt="" class="programas__robotica--img">
+            <img src="./assets/robotica-educativa-07-800x533.jpg" 
+            alt="" class="programas__robotica--img">
           </div>
         </div>
 
@@ -208,7 +228,8 @@
             </a>
           </div>
           <div class="capa__seguridad--card">
-            <img src="./assets/seguridad-informatica-para-infancias-800x531.jpg" alt="" class="capa__seguridad--img">
+            <img src="./assets/seguridad-informatica-para-infancias-800x531.jpg"
+             alt="" class="capa__seguridad--img">
           </div>
         </div>
 
