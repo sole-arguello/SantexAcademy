@@ -1,0 +1,391 @@
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: white;
+    padding: 1.2rem 0 1.2rem 2.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   border-bottom: 1px solid #8C939C;
+}
+
+
+.header__img{
+    max-width: 100%;
+    height: auto;
+    margin-right: 10rem;
+}
+.nav {
+    font-size: .88rem;
+ }
+
+
+.toggle__img {
+    width: 2.5rem;
+}
+
+.toggle__icono, #check, #destock1, #destock2{
+    display: none;
+}
+ /**/
+.nav__menu{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.nav__list--items{
+    
+    /* padding: 1rem; */
+    /* padding-left: 2.3rem; */
+    list-style: none;
+}
+
+.nav__list--items-li {
+    /* position: fixed; */
+    text-decoration: none;
+    color: black;                  
+}
+.icono{
+    color: black;
+}
+.nav__list--items-li:hover, 
+.icono:hover{
+    color: rgb(107, 83, 240);
+}
+.sumateText{
+    text-decoration: none;
+    color: rgb(32, 27, 36);
+    border: 2px solid rgb(32, 27, 36);
+    border-radius: 10rem;
+    padding: 9px 20px;
+    
+}
+.sumateText:hover{
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        border-bottom: none;
+    }
+    #toggle1, #toggle2{
+        display: none;
+    }
+    #destock1, #destock2{
+        display: block;
+    }
+    #imgDestock{
+        display: none;
+    }
+    .checkBtn{
+        display: block;
+    }
+    .toggle__icono{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav__menu {
+        flex-direction: column;
+        position: fixed;
+        top: 4.37rem;
+        left: -100%;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+      
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .sumateText{
+        border: none;
+    }
+
+    
+}
+
+-----------------------------------
+
+.somos__arriba{
+    text-align: center;
+    width: 50%;
+    margin: 5rem auto;
+    padding-top: 5rem;
+}
+.somos__texto{
+    margin: auto;
+    width: 78%;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.somos__btn{
+    margin: 3rem 0;
+}
+.somos__btn--contactanos, 
+.somos__btn--sumate{
+    text-decoration: none;
+    border-radius: 10rem;
+    padding: 9px 20px;
+    margin: 0 15px;
+    font-size: .8rem;
+}
+.somos__btn--contactanos{
+    color: black;
+    border: 2px solid rgb(32, 27, 36);
+}
+.somos__btn--contactanos:hover{
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+.somos__btn--sumate{
+    color: rgb(107, 83, 240);
+    border: 2px solid rgb(107, 83, 240);
+}
+.somos__btn--sumate:hover{
+    color: white;
+    background-color: rgb(107, 83, 240);
+}
+.somos__icono{
+    margin-left: 2px;
+}
+.somos__abajo{
+    color: white;
+    background-color: rgb(32, 27, 36);
+    /**/
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.contenedor{
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    padding: 5rem 0;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.somos_texto{
+    width: 60%;
+    text-align: left;
+    margin-right: 5rem;
+}
+.somos__texto--impacto{
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: .8rem 0;
+}
+.somos__texto--desc{
+    font-size: .9rem;
+
+}
+
+.somos__numeros{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.somos__numero{
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-bottom: .2rem;
+}
+.icono__num{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(107, 83, 240);
+}
+.somos__numero--texto{
+    color: rgb(140, 147, 156);
+}
+
+--------------------------------
+
+/* programas xacademy y capacitaciones*/
+.programas__capacitaciones {
+
+}
+.capa__estafas--titulo {
+font-size: 1.4rem;
+margin-bottom: 1.5rem;
+}
+.programas__xacademy,
+.capa__estafas{
+    display: flex;
+    align-items: center;
+    margin: 5rem 1rem;
+}
+
+.programas__xacademy--card,
+.programas__xacademy--contenido, 
+.capa__estafas--card,
+.capa__estafas--contenido {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8rem;
+}
+
+.programas__xacademy--card-titulo,
+.capa__estafas--card-titulo{
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.programas__xacademy--card-img {
+    border-radius: 3rem 3rem 3rem 0;
+    margin-right: 8rem;
+    width: 100%;
+}
+.capa__estafas--card-img {
+    border-radius: 3rem 3rem 3rem 0;
+    margin-right: 5rem;
+    width: 105%;
+}
+
+.programas__xacademy--contenido,
+.capa__estafas--contenido {
+    width: 70%;
+}
+.programas__xacademy--contenido-img{
+    width: 30%;
+}
+.programas__xacademy--contenido-descrp {
+    font-size: .9rem;
+    width: 70%;
+    line-height: 1.2rem;
+
+}
+.capa__estafas--contenido-descrp {
+    font-size: .9rem;
+    width: 75%;
+    line-height: 1.2rem;
+}
+.programas__xacademy--contenido-btn,
+.programas__robotica--btn,
+.capa__estafas--contenido-btn,
+.capa__seguridad--btn {
+    width: 18%;
+    font-size: .8rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(32, 27, 36);
+    border-radius: 10rem;
+    padding: 9px 20px;
+    
+}
+.programas__xacademy--contenido-btn:hover, 
+.programas__robotica--btn:hover,
+.capa__estafas--contenido-btn:hover,
+.capa__seguridad--btn:hover {
+    color: white;
+    background-color: rgb(32, 27, 36);
+}
+
+/* programas robotica y capacitaciones*/
+
+*
+.programas__robotica,
+.capa__seguridad {
+    /* display: flex; */
+    /* margin: 0 9rem; */
+    /* align-items: center; */
+    margin-left: 0;
+}
+*
+.programas__robotica--contenedor,
+.capa__seguridad--contenedor {
+    width: 75%;
+    margin-left: 3rem;
+}
+.programas__robotica--titulo,
+.capa__seguridad--titulo{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.programas__robotica--descrip,
+.capa__seguridad--descrip {
+    font-size: .9rem;
+    width: 80%;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.programas__robotica--card,
+.capa__seguridad--card {
+    margin-right: 1rem;
+}
+.programas__robotica--img {
+    width: 100%;
+    margin-left: 1rem;
+    border-radius: 3rem 3rem 0 3rem;
+}
+.capa__seguridad--img {
+    width: 105%;
+    margin-left: .5rem;
+    border-radius: 3rem 3rem 0 3rem;
+}
+
+---------------------------------------------
+
+.equipo {
+    background-color: rgb(244, 244, 245);
+    padding-bottom: 3rem;
+}
+.equipo__titulo{
+    padding: 5rem 0 0 8rem;
+    font-size: 2rem;
+}
+.equipo__contenedor{
+    text-align: center;
+    padding: 1rem 5.5rem;
+    margin-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.equipo__card{
+    /* width: 60%; */
+    flex: 0 1 18%;
+    margin: .8rem;
+    background-color: white;
+    border-radius: .8rem .8rem .8rem 0;
+}
+
+.equipo__card--img{
+    width: 100%;
+    border-radius: .8rem .8rem 0 0;
+}
+.equipo__card--nombre{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 1.5rem;
+}
+.equipo__card--cargo{
+    font-size: .95rem;
+    color: rgb(140, 147, 156);
+}
+.linkedin-icono{
+    color: rgb(32, 27, 36);
+    font-size: .8rem;
+    font-weight: 600;
+    margin: .9rem 0 1rem 0;
+    border: 2px solid;
+    padding: 0.28rem .35rem;
+    border-radius: 95%;
+}
+.linkedin-icono:hover{
+    color: white;
+    border: 2px solid rgb(107, 83, 240);
+    background-color: rgb(107, 83, 240);
+}
