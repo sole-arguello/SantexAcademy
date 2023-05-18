@@ -389,3 +389,49 @@ margin-bottom: 1.5rem;
     border: 2px solid rgb(107, 83, 240);
     background-color: rgb(107, 83, 240);
 }
+
+---------------------------
+
+/* footer */
+
+.footer{
+    color: white;
+    background-color: rgb(32, 27, 36);
+    display: flex;
+    padding: 3.7rem 10rem 3.7rem 2rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.footer__logo{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.footer__texto{
+    text-align: left;
+    font-size: .7rem;
+    line-height: 1.2rem;
+    width: 18%;
+}
+
+.footer__nosotros-contacto, 
+.footer__programas-capacit,
+.footer__redes{
+    text-align: left;
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+.footer__linkedin,
+.footer__instagram {
+    
+    color: white;
+    text-decoration: none;
+}
+.footer-icono{
+    color: white;
+    padding-right: .5rem;
+}
