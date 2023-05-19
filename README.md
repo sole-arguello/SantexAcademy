@@ -13,5 +13,6 @@ XAcademy es un programa de formación en programación nativo llevado adelante p
 <img src='./maquetacion/assets/readme/equipo.jpg'>
 <br><br>
 ## ✔️ Implementacion
+
 <br><br>
 <img src='./maquetacion/assets/readme/page.jpg'>
