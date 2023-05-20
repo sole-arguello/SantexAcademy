@@ -336,16 +336,17 @@
 
 .alianza__slaide__track{
     display: flex;
-    animation: scroll 20s infinite alternate linear;
-    -webkit-animation: scroll 20s infinite alternate linear;
-    width: calc(12.5rem * 14);
+    animation: scroll 30s infinite ease-in-out;
+    -webkit-animation: scroll 30s infinite ease-in-out;
+    width: calc(240px * 18);
 }
 
 .alianza__slaide{
-    width: 12.5rem;
+    width: 240px;
 }
 
 .alianza__slide--img{
+    height: 90px;
     width: 100%;
     filter: grayscale(100%) ;
 }
@@ -354,14 +355,30 @@
 }
 
 @keyframes scroll{
-    0%{
+    0%, 31% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      32%, 64% {
+        -webkit-transform: translateX(calc(-240px * 3));
+        transform: translateX(calc(-240px * 3));
+      }
+      65%, 98% {
+        -webkit-transform: translateX(calc(-240px * 6));
+        transform: translateX(calc(-240px * 6));
+      }
+      99%, 100% {
+        -webkit-transform: translateX(calc(-240px * 9));
+        transform: translateX(calc(-240px * 9));
+      }
+    /* 0%{
        -webkit-transform: translateX(0);
        transform: translateX(0); 
     }
     100%{
-        -webkit-transform: translateX(calc(-200px * 7));
-        transform: translateX(calc(-200px * 7));
-    }
+        -webkit-transform: translateX(calc(-240px * 3));
+        transform: translateX(calc(-240px * 3));
+    } */
 }
 
 /* footer */
@@ -505,6 +522,14 @@
         display: flex;
         flex-direction: column;
     }
+    .programas__xacademy--contenido-btn,
+    .programas__robotica--btn,
+    .capa__estafas--contenido-btn,
+    .capa__estafas--contenido-btn,
+    .capa__seguridad--btn{
+    width: 18.9%;
+    padding: 9px 20px;
+}
     .programas__xacademy,
     .capa__estafas,
     .programas__robotica,
@@ -593,7 +618,7 @@
         width: 100%;
     }
     .equipo__card{
-        flex: 0 1 18%;
+        flex: 0 1 17%;
         margin: .8rem;
         background-color: white;
         border-radius: .8rem .8rem .8rem 0;
@@ -601,8 +626,11 @@
     .equipo__card--nombre{
          margin-bottom: 0;
     }
+    .alianza__titulo {
+        padding: 4rem 0 2rem 8rem;
+    }
     .alianza__slaider{
-        margin: 0 8rem;
+        margin: 0 5rem;
     }
 
     .footer{
